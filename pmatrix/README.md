@@ -2,8 +2,6 @@
 The project was created entirely by [joechrisellis](https://github.com/joechrisellis) over on [their github repo](https://github.com/joechrisellis/pmatrix).
 This is just a docker container of their script.
 
-This is the repo for my dockerhub automated build.
-
 Start with: `docker run --rm --log-driver none -it beezu/pmatrix`
 
 ctrl+c to close it.
