@@ -1,3 +1,4 @@
-FROM  mcr.microsoft.com/azure-powershell:ubuntu-18.04
-RUN pwsh -command Install-Module -Name ExchangeOnlineManagement -AllowPrerelease -force ; pwsh -command Import-Module ExchangeOnlineManagement
+FROM --platform=linux/amd64 mcr.microsoft.com/powershell:7.2.2-alpine-3.14-20220318
+RUN pwsh -c 'Install-Module PSWSMan -Scope AllUsers -force' ; pwsh -c 'Install-WSMan' ; \
+  pwsh -c 'Install-Module -Name ExchangeOnlineManagement -AllowPrerelease -force'
 CMD [ "pwsh" ]
