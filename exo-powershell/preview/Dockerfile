@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 mcr.microsoft.com/powershell:7.3.0-preview.3-alpine-3.14-20220318
+FROM --platform=linux/amd64 mcr.microsoft.com/powershell:preview-alpine-3.14
 RUN pwsh -c 'Install-Module PSWSMan -Scope AllUsers -force' ; pwsh -c 'Install-WSMan' ; \
   pwsh -c 'Install-Module -Name ExchangeOnlineManagement -AllowPrerelease -force'
 CMD [ "pwsh" ]
