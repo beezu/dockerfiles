@@ -4,4 +4,4 @@ This will serve as a repo for my various dockerfiles, rather than having every d
 
 Each one will have its own ReadMe where applicable, and many will be on Docker Hub!
 
-I build in multiarch for docker hub. https://hub.docker.com/u/beezu
+I build in multiarch on docker hub. https://hub.docker.com/u/beezu
