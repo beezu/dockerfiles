@@ -9,4 +9,4 @@ ctrl+c to close it.
 
 I personally set up a bash alias to make launching matrix-rain easier.
 
-**NOTE**: It's important to set log driver to none, because this container will quickly fill your hard drive/partition with logs. With regular use, you could fill a 250GB hard drive with matrix-rain docker logs in a matter of weeks. 
+I recommend setting log-driver to none as it can generate quite a lot of useless logs that take up space.

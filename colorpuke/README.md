@@ -7,7 +7,7 @@ Simply run `sh colorpuke.sh` after cloninng
 Alternatively, run it in docker! I configured a dockerhub page for this container, and it is a very small container (Alpine base image, no extra packages need to be installed). You don't even need to clone this repo, simply run:
 `docker run --rm --log-driver none -it beezu/colorpuke`. Use ctrl+c to quit it.
 
-I highly recommend setting the log-driver to none because this will generate logs endlessly and quickly, and fill your hard drive over time.
+I recommend setting log-driver to none as it can generate quite a lot of useless logs that take up space.
 
 # Things to keep in mind
 

@@ -1,3 +1,4 @@
-from node
-run npm install -g matrix-rain
-cmd ["matrix-rain"]
+FROM alpine
+RUN apk add --no-cache nodejs npm
+RUN npm install -g matrix-rain
+CMD ["matrix-rain"]
